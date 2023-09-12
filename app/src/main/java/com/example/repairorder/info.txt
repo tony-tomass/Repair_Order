@@ -1,2 +1,2 @@
 1.) I used the TextView widget.
-2.) EditText will let you edit the text while TextView does not.
+2.) EditText will let you edit the text while TextView does not
