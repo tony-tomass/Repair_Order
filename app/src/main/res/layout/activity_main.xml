@@ -16,16 +16,6 @@
         app:layout_constraintEnd_toEndOf="@+id/inspection_edittext"
         app:layout_constraintTop_toBottomOf="@+id/inspection_edittext" />
 
-    <EditText
-        android:id="@+id/total_edittext"
-        android:layout_width="58dp"
-        android:layout_height="43dp"
-        android:layout_marginEnd="28dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tax_edittext" />
-
     <TextView
         android:id="@+id/total_textview"
         android:layout_width="wrap_content"
@@ -192,28 +182,6 @@
         app:layout_constraintEnd_toEndOf="@+id/paint_edittext"
         app:layout_constraintTop_toBottomOf="@+id/paint_edittext" />
 
-    <EditText
-        android:id="@+id/subtotal_edittext"
-        android:layout_width="58dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="584dp"
-        android:layout_marginEnd="28dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/tax_edittext"
-        android:layout_width="58dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="28dp"
-        android:ems="10"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtotal_edittext" />
-
     <Button
         android:id="@+id/submit_button"
         android:layout_width="wrap_content"
@@ -223,5 +191,41 @@
         android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/subtotal_value_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="@string/_0_00"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/subtotal_textview"
+        app:layout_constraintTop_toTopOf="@+id/subtotal_textview" />
+
+    <TextView
+        android:id="@+id/total_value_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="$0.00"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/total_textview"
+        app:layout_constraintTop_toTopOf="@+id/total_textview" />
+
+    <TextView
+        android:id="@+id/tax_value_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="$0.00"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tax_textview"
+        app:layout_constraintTop_toTopOf="@+id/tax_textview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
