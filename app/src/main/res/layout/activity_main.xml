@@ -228,4 +228,14 @@
         app:layout_constraintStart_toEndOf="@+id/tax_textview"
         app:layout_constraintTop_toTopOf="@+id/tax_textview" />
 
+    <Spinner
+        android:id="@+id/order_type_SP"
+        android:layout_width="217dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:entries="@array/order_type_items"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

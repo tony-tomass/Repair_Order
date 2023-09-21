@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
     Button submitbutton;
     EditText technician_edit, order_edit, inspection_edit, paint_edit, parts_edit, labor_edit;
     TextView subtotal_value, tax_value, total_value;
+    Spinner order_type_sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
         paint_edit = findViewById(R.id.paint_edittext);
         parts_edit = findViewById(R.id.parts_edittext);
         labor_edit = findViewById(R.id.labor_edittext);
+
+        order_type_sp = findViewById(R.id.order_type_SP);
 
         submitbutton.setOnClickListener(submitListener);
         //submitbutton.setText("hello");

@@ -13,4 +13,11 @@
     <string name="parts">Parts</string>
     <string name="submit">Submit</string>
     <string name="_0_00">$0.00</string>
+    <string-array name="order_type_items">
+        <item>IDK</item>
+        <item>HAHAHA</item>
+        <item>Regular</item>
+        <item>Extra</item>
+        <item>Pepperoni Pizza</item>
+    </string-array>
 </resources>
